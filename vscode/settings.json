@@ -1,0 +1,167 @@
+{
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorTheme": "After Dark",
+  "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
+  "terminal.integrated.fontFamily": "JetBrains Nerd Font",
+  "editor.linkedEditing": true,
+  "window.commandCenter": false,
+  "breadcrumbs.enabled": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.suggest.showStatusBar": false,
+  "window.titleBarStyle": "custom",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.cursorSurroundingLines": 8,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // Zen mode
+  "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "none",
+  "zenMode.hideStatusBar": true,
+  "vim.smartRelativeLine": true,
+  "vim.handleKeys": {
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-p>": false,
+    "<C-d>": false
+  },
+  "vim.leader": "<space>",
+  "vim.startInInsertMode": false,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.sneak": true,
+  "vim.useSystemClipboard": true,
+
+  "vim.statusBarColorControl": false,
+
+  // vim keybindings
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<ESC>"]
+    },
+    {
+      "before": ["g", "I"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["<leader>", "9"],
+      "after": ["<ESC>", "%", "a"]
+    },
+    {
+      "before": ["<leader>", "["],
+      "after": ["<ESC>", "%", "a"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    // Close current tab
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // Move to right tab
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    // Move to left tab
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"],
+      "silent": true
+    },
+    {
+      "before": ["<C-a>"],
+      "after": ["g", "g", "v", "G"]
+    },
+    // bookmarks
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["bookmarks.list"]
+    }
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "window.zoomLevel": 1,
+  "files.associations": {
+    "*.css": "css"
+  },
+  "liveServer.settings.donotShowInfoMsg": true
+}
